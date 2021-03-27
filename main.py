@@ -14,7 +14,7 @@ if __name__ == '__main__':
     # ico.img()
     command.command_start()
     AutoTime.Auto()
-    log.info('程序已启动，输入help查看帮助')
     win10.Title('程序已启动\n同步已开启')
+    log.info('程序已启动，输入help查看帮助')
 
 # 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
