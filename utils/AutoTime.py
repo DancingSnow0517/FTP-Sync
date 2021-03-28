@@ -21,6 +21,7 @@ class Sync(Thread):
     def run(self):
         log.info('已开启自动同步')
         # win10.Title('已开启自动同步')
+        FTP.Connect()
         while Flag:
             time_array = time.localtime(time.time())
             if time_array.tm_hour < 10:
