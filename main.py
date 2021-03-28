@@ -3,7 +3,6 @@ from utils import command
 from utils import AutoTime
 from utils import win10
 from utils import updata
-from utils import ico
 if __name__ == '__main__':
     # ico.img()
     command.command_start()

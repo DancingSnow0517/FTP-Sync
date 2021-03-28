@@ -1,7 +1,11 @@
+from os.path import dirname, abspath
+
 CMDS = "taskkill /F /IM main.exe /T \n" \
        "move updata\*.* .\ \n" \
        "run.vbs\n" \
        "del updata.bat"
+
+PATH = abspath('./')
 
 
 def kill():
@@ -11,7 +15,7 @@ def kill():
 
 def start():
     with open('run.vbs', 'w') as f:
-        f.write('set wscriptObj = CreateObject("Wscript.Shell")\nwscriptObj.run "main.exe",0')
+        f.write(f'set wscriptObj = CreateObject("Wscript.Shell")\nwscriptObj.run "{PATH}\\main.exe",0')
 
 
 def updata():

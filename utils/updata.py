@@ -9,6 +9,9 @@ import os
 
 up = config.ReadConfig()
 
+if not os.path.exists('updata'):
+    os.mkdir('updata')
+
 
 def check():
     log.info("检查更新")
